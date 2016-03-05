@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["peter.wood@longboat.com"]
   spec.summary       = %q{A library that abstracts the use of a REST interface.}
   spec.description   = %q{REST chain is a library that abstracts the path elements of making a REST API call to appear as method calls in Ruby.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/free-beer/rest_chain"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
