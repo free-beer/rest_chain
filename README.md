@@ -77,6 +77,18 @@ fetch a user with an id of 123 as follows...
 response = chain.users(123).get
 ```
 
+Note that if there were parameters that you wanted to append to the request e.g.
+a session id) then you can specify them as part of the 'verb' method that is used
+to initiate the request. So, using the previous example as a basis, you could add
+the session id like this...
+
+```ruby
+response = chain.users(123).get(session_id: session.id)
+```
+
+Methods are provided for the ```delete```, ```get```, ```patch```, ```post``` and
+```put``` verbs that all work in a similar fashion.
+
 This call would return a ```RestChain::RestResponse``` object. This object will
 possess details for the response received for the request including the status
 code of the response, the headers and the response body. If you knew your response
